@@ -246,6 +246,7 @@ header
         align-items: center;
         gap: 63px;
         margin: 0 auto;
+        list-style: none;
     }
 
     .nav__item {
