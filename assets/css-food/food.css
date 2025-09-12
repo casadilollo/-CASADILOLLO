@@ -20,7 +20,7 @@ body {
          'Noto Sans CJK JP',
         'Noto Sans JP',
         'Fira Sans',
-        sans-serif;
+        sans-serif!important;
     font-style: normal;
     font-weight: 400;
     color: var(--black, #333333);
