@@ -17,8 +17,8 @@ html {
 
 body {
     font-family:
-        'noto sans cjk jp',
-        'noto sans jp',
+         'Noto Sans CJK JP',
+        'Noto Sans JP',
         'Fira Sans',
         sans-serif;
     font-style: normal;
@@ -938,11 +938,21 @@ header
 }
 
 
-.litle__caption {
+.litle__caption__a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(51, 51, 51, 0.60);
+  padding-bottom: 16px;
+  width: 326px;
+
+}
+
+.litle__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(51, 51, 51, 0.60); */
   padding-bottom: 16px;
 
 }
