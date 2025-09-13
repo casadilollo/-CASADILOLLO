@@ -350,7 +350,7 @@ main
 
 .header__maintopics {
     color:var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 2.4rem;
     font-weight: 500;
     line-height: 1.8;
@@ -587,7 +587,7 @@ pick up menu
 .gosyoukai {
     color: var(--black);
     text-align: center;
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2;
@@ -732,7 +732,7 @@ pick up menu
 
 .pickupmenu__recommendation {
     color:var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.87;
@@ -768,7 +768,7 @@ pick up menu
 
 .pickupmenu__title {
     color:var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2;
@@ -779,7 +779,7 @@ pick up menu
 
 .pickupmenu__maintxt {
     color:var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.4rem;
     line-height: 1.87;
     letter-spacing: 0.28px;
@@ -1230,7 +1230,7 @@ NEWS/CONTACTの詳細
 
 .news__txt {
     color: var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.6rem;
     line-height: 2.3;
     letter-spacing: 0.32px;
@@ -1353,7 +1353,7 @@ NEWS/CONTACTの詳細
     align-items: center;
     gap: 3px;
     color: var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.92;
@@ -1416,7 +1416,7 @@ NEWS/CONTACTの詳細
 .meisyou {
     color: var(--black);
     text-align: center;
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.1;
