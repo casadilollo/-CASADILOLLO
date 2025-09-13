@@ -17,7 +17,7 @@ html {
 
 body {
     font-family:
-        'Noto Sans CJK JP',
+        /* 'Noto Sans CJK JP', */
         'Noto Sans JP',
         'Fira Sans',
         sans-serif!important;
@@ -130,7 +130,7 @@ header
 .contactaddress {
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 0 87.5px;;
+  padding: 0 calc((100% - 186px)/2);
 }
 
 
@@ -164,6 +164,7 @@ header
     font-style: italic;
     font-weight: 600;
     line-height: 2.1;
+     white-space: nowrap;
 }
 
 .header__phone__logo {
@@ -974,7 +975,7 @@ css記述　チャッピーaboutのところから
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 0 87.5px;
+    padding: 0 calc((100% - 186px)/2);
 }
 
 .instawaku__footer {
@@ -1042,7 +1043,7 @@ css記述　チャッピーaboutのところから
     font-style: italic;
     font-weight: 600;
     line-height: 2.1;
-    width: 100%;
+   white-space: nowrap;
 }
 
 .copy {
