@@ -17,7 +17,7 @@ html {
 
 body {
     font-family:
-        /* 'Noto Sans CJK JP', */
+        'Noto Sans CJK JP',
         'Noto Sans JP',
         'Fira Sans',
         sans-serif!important;
@@ -384,7 +384,7 @@ main
 
 .mainTopics__txt {
     color:var(--black);
-    font-family: "Noto Sans CJK JP";
+    /* font-family: "Noto Sans CJK JP"; */
     font-size: 1.4rem;
     line-height: 2.3;
     letter-spacing: 0.28px;
