@@ -488,8 +488,11 @@ css記述　チャッピーaboutのところから
 
 /* セクションタイトル */
 .tokutyou {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  gap: 5px;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 34px;
@@ -499,26 +502,24 @@ css記述　チャッピーaboutのところから
 
 .tokutyou::before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  width: 15px; /* 長さ */
-  height: 2px; /* 太さ */
+  width: 2px;
+  height: 1.5rem;
   background-color:var(--italygreen); /* 緑色 */
-  transform: translateY(-50%) rotate(62.35deg);
-  border-radius: 1px;
+  transform:rotate(-25deg);
+  border-radius: 5px;
+  transform-origin: center bottom;
+  display: block;
 }
 
 .tokutyou::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  width: 15px; /* 長さ */
-  height: 2px; /* 太さ */
+  width: 2px;
+  height: 1.5rem; 
   background-color:var(--italygreen); /* 緑色 */
-  transform: rotate(-62.35deg);
-  border-radius: 1px;
+  transform: rotate(25deg);
+  border-radius: 5px;
+  transform-origin: center bottom;
+  display: block;
 }
 
 .points {
@@ -670,31 +671,28 @@ css記述　チャッピーaboutのところから
 
   .tokutyou {
     font-size: 2.4rem;
-    display: inline-block;
   }
 
   .tokutyou::before{
     content: "";
-    position: absolute;
-    top: 42%;
-    left: -13%;
-    width: 32px; /* 長さ */
-    height: 2px; /* 太さ */
+    width: 2px;
+    height: 2.5rem;
     background-color:var(--italygreen); /* 緑色 */
-    transform: rotate(62.35deg) ;
-    border-radius: 1px;
+    transform: rotate(-25deg) ;
+    border-radius: 5px;
+    transform-origin: center bottom;
+    display: block;
   }
 
   .tokutyou::after {
     content: "";
-    position: absolute;
-    top: 42%;
-    right: -15%;
-    width: 32px; /* 長さ */
-    height: 2px; /* 太さ */
+    width: 2px;
+    height: 2.5rem;
     background-color:var(--italygreen); /* 緑色 */
-    transform: rotate(-62.35deg);
-    border-radius: 1px;
+    transform: rotate(25deg);
+    border-radius: 5px;
+    transform-origin: center bottom;
+    display: block;
   }
 
   /* リスト全体 */

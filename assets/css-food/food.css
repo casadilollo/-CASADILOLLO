@@ -810,6 +810,7 @@ ul.noimg {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 320px;
 }
 
 .bf {
@@ -1086,6 +1087,7 @@ li.pizza__txt__sample {
   ul.noimg {
     padding-top: 0;
     gap: 0px;
+    max-width: 869px;
   }
 
  
