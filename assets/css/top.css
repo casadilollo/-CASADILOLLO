@@ -668,6 +668,10 @@ pick up menu
     max-width: 292px;
 }
 
+.pickupmenu__txt {
+    max-width: 325px;
+}
+
 .set__p__last {
     background-color: var(--white);
     padding: 2.4rem;
@@ -983,6 +987,7 @@ pick up menu
         position: relative;
         padding: 50px 35px;
         margin: 0 auto;
+        max-width: none;
     }
 
     /* .pickupmenu__txt::before {
@@ -1389,6 +1394,7 @@ NEWS/CONTACTの詳細
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 381px;
 }
 
 .secondtitle {
@@ -1923,3 +1929,126 @@ access/contact
     }
 
 }
+
+
+
+
+/* ===========================
+   tablet 769px〜1200px 共通
+=========================== */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /* ===== header ===== */
+    .header {
+        height: 104px;
+        padding: 0 30px;
+    }
+
+    .header__logo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .nav {
+        position: static;   /* 固定解除 */
+        height: auto;
+        transform: translateX(0);
+        display: flex;
+        flex: 1;
+        background: transparent;
+        padding: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        padding-top: 13px;
+    }
+
+    .nav__item {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .contactaddress {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: auto;
+        margin-right: -31px;
+    }
+
+    .instagram__click__f {
+        font-size: 1.5rem;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    /* ===== footer ===== */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+
+    .menu__list {
+        gap: 34px;
+
+    }
+
+    .contactaddress__last {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* align-items: center; */
+    }
+
+    .instawaku__footer,
+    .phone__footer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.5rem;
+    }
+
+    .footer__instalogo,
+    .footer__phone__logo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .instagram__click__f,
+    .phone__txt__f {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .footer__copy {
+        font-size: 1.4rem;
+        text-align: right;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

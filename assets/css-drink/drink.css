@@ -1167,21 +1167,6 @@ header
       gap: 195px;
     }
 
-    
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
   }
 
 
@@ -1205,6 +1190,8 @@ header
   display: flex;
   flex-direction: column;
  /* margin-top: 54px; */
+  max-width: 330px;
+  margin: 0 auto;
 }
 
 /* 写真がないワインリスト（ul） */
@@ -1332,6 +1319,7 @@ header
     border: 1px solid #C4C4C4;
     margin: 0 auto;
     gap: 0;
+    max-width: 869px;
   }
 
   .alcohol__txt__sample {
@@ -1481,6 +1469,8 @@ header
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 330px;
+  margin: 30px  auto;
 }
 
 
@@ -1496,9 +1486,9 @@ header
   }
   
   .noimg__liqueur {
-   padding: 30px 3.9vw;
-   background-color: rgba(230, 227, 227, 0.3);
-    /* max-width: 403px; */
+    padding: 30px 3.9vw;
+    background-color: rgba(230, 227, 227, 0.3);
+    max-width: 440px;
     border: 1px solid #C4C4C4;
     gap: 30px;
   }
@@ -1569,6 +1559,8 @@ header
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 330px;
+  margin: 30px auto;
 }
 
 /* ==================  */
@@ -1580,6 +1572,7 @@ header
     background-color: rgba(230, 227, 227, 0.3);
     border: 1px solid #C4C4C4;
     gap: 30px;
+    max-width: 440px;
   }
 
   .noimg__others .litle__caption {
@@ -1625,6 +1618,8 @@ header
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 330px;
+  margin: 0 auto;
 }
 
 .box__jinor {
@@ -1740,6 +1735,7 @@ header
     gap: 95px;
     margin: 0 auto;
     justify-content: center;
+    max-width: 869px;
 
   }
   
@@ -1785,6 +1781,7 @@ header
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 30px;
+  max-width: 330px;
 }
 
 .box__es__cap {
@@ -1844,6 +1841,7 @@ header
     border: 1px solid #C4C4C4;
     gap: 0;
     margin-top: 54px;
+    max-width: 869px;
   }
 
   .box__es__cap {
