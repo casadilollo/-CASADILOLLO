@@ -1931,36 +1931,43 @@ access/contact
 }
 
 
-
-
 /* ===========================
-   tablet 769px〜1200px 共通
+   tablet 769px〜1297px 共通
 =========================== */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1297px) {
     /* ===== header ===== */
     .header {
-        height: 104px;
-        padding: 0 30px;
+        /* height: 80px; */
+        padding: 0 32px;
     }
 
     .header__logo {
-        max-width: 100px;
+        /* max-width: 100px; */
         height: auto;
     }
 
+    .header__logo {
+    height: 60px;            /* ロゴを大きく */
+  }
+
+  .header__list {
+    gap: 24px;               /* ナビの間隔調整 */
+  }
+
+  .header__list a {
+    font-size: 16px;         /* フォントサイズ調整 */
+  }
+
     .nav {
-        position: static;   /* 固定解除 */
-        height: auto;
-        transform: translateX(0);
-        display: flex;
-        flex: 1;
-        background: transparent;
-        padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      background: transparent;
     }
 
     .nav__list {
         display: flex;
-        flex-wrap: wrap; 
+        /* flex-wrap: wrap;  */
         gap: 24px;
         margin: 0;
         padding: 0;
@@ -1975,13 +1982,30 @@ access/contact
     }
 
     .contactaddress {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: auto;
-        margin-right: -31px;
+        max-width: 90%;          /* 横幅を少し広めに */
+        margin: 40px auto;       /* 上下に余白・中央寄せ */
+        display: flex;           /* 横並びにしたい場合 */
+        flex-wrap: wrap;         /* はみ出したら折り返し */
+        justify-content: center; /* 中央配置 */
+        /* gap: 24px;  */
+        font-size: 16px; 
     }
 
+    .instawaku__nav {
+        display: flex;             /* 横並びに */
+        justify-content: center;   /* 中央寄せ */
+        gap: 20px;                 /* アイテム間の間隔 */
+        margin-top: 20px;          /* 上の余白調整 */
+        flex-wrap: wrap;           /* 幅が狭くなったら折り返す */
+  }  
+
+  .phone {
+      display: flex;
+      /* justify-content: center; */
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+    
     .instagram__click__f {
         font-size: 1.5rem;
     }
@@ -1990,6 +2014,45 @@ access/contact
         display: none;
     }
 
+ /* ===== main ===== */
+    .chizu__img {
+        position: absolute;
+        top: -9%;
+        right: -97px;
+    }
+
+    .chizu {
+        width: 90%;
+        margin: 0 auto;
+        height: 22vh;
+    }
+
+    .pickuset {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .pickuset__dolce {
+        display: flex;
+        gap: 74px;
+        flex-direction: column;
+    }
+
+    .profilegray {
+        flex-direction: column;
+    }
+
+    .profile__txtarea {
+       position: relative;
+        padding: 20px;  /* 内側の余白で文字が詰まらないように */
+        width: 100%;
+        max-width: 600px; /* 必要に応じて調整 */
+        margin: 0 auto;   /* 中央寄せ */
+        box-sizing: border-box; 
+    }
+
+    
     /* ===== footer ===== */
     .footer {
         display: flex;
@@ -1999,18 +2062,44 @@ access/contact
         gap: 20px;
         padding: 0 30px;
         flex-wrap: wrap;
+        padding: 40px 7.4vw;
+        background-color: #f9f9f9;
+        text-align: center;
+  }
+
+
+
+  .footer__group {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    width: 150px;
+    height: auto;
+  }
+  
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+
     }
 
-    .menu__list {
-        gap: 34px;
-
+    .footerflex {
+        align-items: flex-start;       /* 上揃え */
+        gap: 20px;                     /* 要素間の隙間 */
     }
 
     .contactaddress__last {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        /* align-items: center; */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .instawaku__footer,
@@ -2052,3 +2141,6 @@ access/contact
 
 
 
+
+
+   

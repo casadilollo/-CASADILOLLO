@@ -1143,3 +1143,201 @@ css記述　チャッピーaboutのところから
 }
 
 
+
+
+
+
+
+/* ===========================
+   tablet 769px〜1297px 共通
+=========================== */
+@media screen and (min-width: 769px) and (max-width: 1297px) {
+    /* ===== header ===== */
+    .header {
+        /* height: 80px; */
+        padding: 0 32px;
+    }
+
+    .header__logo {
+        /* max-width: 100px; */
+        height: auto;
+    }
+
+    .header__logo {
+    height: 60px;            /* ロゴを大きく */
+  }
+
+  .header__list {
+    gap: 24px;               /* ナビの間隔調整 */
+  }
+
+  .header__list a {
+    font-size: 16px;         /* フォントサイズ調整 */
+  }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      background: transparent;
+    }
+
+    .nav__list {
+        display: flex;
+        /* flex-wrap: wrap;  */
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        padding-top: 13px;
+    }
+
+    .nav__item {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .contactaddress {
+        max-width: 90%;          /* 横幅を少し広めに */
+        margin: 40px auto;       /* 上下に余白・中央寄せ */
+        display: flex;           /* 横並びにしたい場合 */
+        flex-wrap: wrap;         /* はみ出したら折り返し */
+        justify-content: center; /* 中央配置 */
+        /* gap: 24px;  */
+        font-size: 16px; 
+    }
+
+    .instawaku__nav {
+        display: flex;             /* 横並びに */
+        justify-content: center;   /* 中央寄せ */
+        gap: 20px;                 /* アイテム間の間隔 */
+        margin-top: 20px;          /* 上の余白調整 */
+        flex-wrap: wrap;           /* 幅が狭くなったら折り返す */
+  }  
+
+  .phone {
+      display: flex;
+      /* justify-content: center; */
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+    
+    .instagram__click__f {
+        font-size: 1.5rem;
+    }
+
+    .header__btn {
+        display: none;
+    }
+  
+
+   /* ===== main ===== */
+   .conseptcontents {
+      display: flex;
+      flex-direction: row-reverse; /* 画像右、テキスト左 */
+      gap: 40px;                   /* 画像とテキスト間の余白 */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .free__img {
+      flex: 0 0 45%;   /* 親の幅の45%を確保 */
+      max-width: 600px; /* 上限を設定 */
+      height: auto;
+  }
+
+  .winepeople__img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .concept__erea {
+      flex: 1 1 50%;   /* テキスト側の幅を確保 */
+  }
+
+
+
+
+
+
+
+
+
+    /* ===== footer ===== */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 0 30px;
+        flex-wrap: wrap;
+        padding: 40px 7.4vw;
+        background-color: #f9f9f9;
+        text-align: center;
+  }
+
+
+
+  .footer__group {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    width: 150px;
+    height: auto;
+  }
+  
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+
+    }
+
+    .footerflex {
+        align-items: flex-start;       /* 上揃え */
+        gap: 20px;                     /* 要素間の隙間 */
+    }
+
+    .contactaddress__last {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .instawaku__footer,
+    .phone__footer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.5rem;
+    }
+
+    .footer__instalogo,
+    .footer__phone__logo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .instagram__click__f,
+    .phone__txt__f {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .footer__copy {
+        font-size: 1.4rem;
+        text-align: right;
+        width: 100%;
+        margin-top: 10px;
+  }
+}
