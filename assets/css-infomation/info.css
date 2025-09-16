@@ -17,10 +17,10 @@ html {
 
 body {
     font-family:
-       /* 'Noto Sans CJK JP', */
+       'Noto Sans CJK JP',
         'Noto Sans JP',
         'Fira Sans',
-        sans-serif!important;
+        sans-serif;
     font-style: normal;
     font-weight: 400;
     color: var(--black, #333333);

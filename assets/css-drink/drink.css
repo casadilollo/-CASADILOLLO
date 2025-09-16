@@ -17,10 +17,10 @@ html {
 
 body {
     font-family:
-         /* 'Noto Sans CJK JP', */
+         'Noto Sans CJK JP',
         'Noto Sans JP',
         'Fira Sans',
-        sans-serif!important;
+        sans-serif;
     font-style: normal;
     font-weight: 400;
     color: var(--black, #333333);
@@ -898,21 +898,21 @@ header
 .price {
   font-size: 1.8rem;
   color: var(--black);
-  font-family: Noto Sans CJK JP;
+  /* font-family: Noto Sans CJK JP; */
   font-weight: 500;
   line-height: 37.80px;
 }
 
 .product__name {
   font-size: 1.4rem;
-  font-family: Noto Sans CJK JP;
+  /* font-family: Noto Sans CJK JP; */
   font-weight: 350;
   line-height: 26.32px;
 }
 
 .main__taxt {
   font-size: 1.4rem;
-  font-family: Noto Sans CJK JP;
+  /* font-family: Noto Sans CJK JP; */
   line-height: 26.32px;
   margin-top: 15px;
 }
@@ -960,7 +960,7 @@ header
 
 .mini__title__jp {
   font-size: 1.4rem;
-  font-family: Noto Sans CJK JP;
+  /* font-family: Noto Sans CJK JP; */
   font-weight: 500;
   line-height: 26.04px;
   letter-spacing: 0.28px;
