@@ -920,7 +920,7 @@ header
 .caption__title__jp {
   font-size: 2rem;
   font-weight: 500;
-  font-family: Noto Sans CJK JP;
+  /* font-family: Noto Sans CJK JP; */
   line-height: 42px;
 }
 

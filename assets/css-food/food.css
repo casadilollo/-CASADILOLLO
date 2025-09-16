@@ -1401,7 +1401,7 @@ li.pizza__txt__sample {
 
 .mini__title__jp {
     font-size: 1.6rem;
-    font-family: Noto Sans CJK JP;
+    /* font-family: Noto Sans CJK JP; */
     font-weight: 500;
     line-height: 29.76px;
     letter-spacing: 0.32px;
