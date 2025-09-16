@@ -1334,6 +1334,10 @@ css記述　チャッピーaboutのところから
         margin-left: 0;
     }
 
+    .phone {
+      flex-wrap: nowrap;
+    }
+
     .footer__copy {
         font-size: 1.4rem;
         text-align: right;
