@@ -27,6 +27,7 @@ body {
     background-color: var(--white, #FFF);
     line-height: 1.5;
     margin: 0;
+    
 }
 
 * {
@@ -189,7 +190,7 @@ header
     height: 84px;
     position: fixed;
     top: 0%;
-    left: 81%;
+    right: -13px;
 }
 
 .nav.active {
@@ -210,7 +211,7 @@ header
         width: 104px;
         height: auto;
         margin-left: 17px;
-        
+
     }
 
     .nav {
@@ -482,7 +483,7 @@ main
         .mainTopics {
             /* background-image: url(../images/abput-pc.jpg); */
             /* background-size: cover; */
-            padding: 85px 16vw 75px ;
+            padding: 85px 9.6vw 75px ;
         }
 
         .a {
@@ -502,6 +503,7 @@ main
             display: flex;
             position: relative;
             max-width: 960px;
+            margin: 0 auto;
         }
 
         .main__txt__chizu::before {
@@ -515,6 +517,7 @@ main
 
         .mainsection {
             margin-left: 155px;
+            z-index: 2;
         }
 
         .header__maintopics {
@@ -545,9 +548,11 @@ main
         }
 
         .btndiv__f {
-            margin-left: 155px;
-            text-align: unset;
-            margin-top: 30px;
+            /* margin-left: 155px; */
+            text-align: justify;
+            /* margin-top: 30px; */
+            max-width: 663px;
+            margin: 40px auto;
         } 
 
         .scroll-infinity {
@@ -1088,70 +1093,7 @@ pick up menu
     }
 }
 
-/* ================== 
-pick up menuの詳細
-====================*/
-.menuaddition {
-    padding: 30px  18px 0 30px;
-}
 
-.explanation {
-    color: var(--black);
-    text-align: center;
-    font-family: "Noto Sans CJK JP";
-    font-size: 1.6rem;
-    line-height: 2.3;
-    letter-spacing: 0.32px;
-}
-
-.takeout {
-    color:var(--black);
-    text-align: center;
-    font-family: "Noto Sans CJK JP";
-    font-size: 1.6rem;
-    line-height: 2;
-    margin-top: 20px;
-}
-
-.secound__btn {
-    display: inline-block;
-    width: 230px;
-    height: 56px;
-    border-radius: 50px;
-    background:var(--red);
-    padding: 11px 94px;
-    color: var(--white);
-    text-align: center;
-    font-family:"Fira Sans";
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2.1;
-    position: relative;
-    transition: 0.4s;
-    margin-top: 20px;
-  
-}
-
-@media screen and (min-width:769px) {
-    .menuaddition {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 40px 0 85px;
-    }
-
-    .explanation {
-        text-align: center;
-        font-size: 1.8rem;
-        line-height: 2.1;
-    }
-
-    .takeout {
-        margin-top: 0;
-        font-size: 1.7rem;
-        line-height: 2.1;
-    }
-}
 
 /* ================== 
 NEWS/CONTACTの詳細
@@ -1540,6 +1482,9 @@ access/contact
 .accessarea {
     background-color: var(--white);
     padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .access .secondtitle {
@@ -1608,6 +1553,7 @@ access/contact
         display: flex;
         flex-direction: row-reverse;
         padding: 85px 16.6vw;
+        justify-content: center;
     }
 
     /* .bbb {
@@ -1842,7 +1788,11 @@ access/contact
 
     .footer__group {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .top__footerbox {
+        display: flex;
     }
 
     .footer__topic {
@@ -1862,8 +1812,7 @@ access/contact
     .menu__list {
         display: flex;
         flex-direction: row;
-        gap: 63px;
-        width: 772px;
+        gap: 76px;
     }
 
     .menu__item {
@@ -1935,12 +1884,6 @@ access/contact
    tablet 769px〜1297px 共通
 =========================== */
 @media screen and (min-width: 769px) and (max-width: 1297px) {
-    /* ===== header ===== */
-    .header {
-        /* height: 80px; */
-        padding: 0 32px;
-    }
-
     .header__logo {
         /* max-width: 100px; */
         height: auto;
@@ -1968,8 +1911,8 @@ access/contact
     .nav__list {
         display: flex;
         /* flex-wrap: wrap;  */
-        gap: 24px;
-        margin: 0;
+        gap: 18px;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
         justify-content: center;
@@ -1981,9 +1924,13 @@ access/contact
         margin-top: 0;
     }
 
+    /* .header__btn {
+        left: 90%;
+    } */
+
     .contactaddress {
         max-width: 90%;          /* 横幅を少し広めに */
-        margin: 40px auto;       /* 上下に余白・中央寄せ */
+        /* margin: 0 auto;  */
         display: flex;           /* 横並びにしたい場合 */
         flex-wrap: wrap;         /* はみ出したら折り返し */
         justify-content: center; /* 中央配置 */
@@ -1994,15 +1941,19 @@ access/contact
     .instawaku__nav {
         display: flex;             /* 横並びに */
         justify-content: center;   /* 中央寄せ */
-        gap: 20px;                 /* アイテム間の間隔 */
-        margin-top: 20px;          /* 上の余白調整 */
+        gap: 20px;              
+        /* margin-top: 20px; */
         flex-wrap: wrap;           /* 幅が狭くなったら折り返す */
-  }  
+    } 
+
+    .header .instagram__img {
+        min-width: 0;
+    }
 
   .phone {
       display: flex;
       /* justify-content: center; */
-      gap: 20px;
+      /* gap: 20px; */
       flex-wrap: wrap;
   }
     
@@ -2015,6 +1966,8 @@ access/contact
     }
 
  /* ===== main ===== */
+   
+
     .chizu__img {
         position: absolute;
         top: -9%;
@@ -2024,7 +1977,11 @@ access/contact
     .chizu {
         width: 90%;
         margin: 0 auto;
-        height: 22vh;
+    }
+
+
+    .btndiv__f {
+        text-align: center;
     }
 
     .pickuset {
@@ -2055,15 +2012,15 @@ access/contact
     
     /* ===== footer ===== */
     .footer {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
         padding: 0 30px;
         flex-wrap: wrap;
-        padding: 40px 7.4vw;
-        background-color: #f9f9f9;
+        /* padding: 40px 7.4vw; */
+        background-color: var(--creamcolor);
         text-align: center;
   }
 
@@ -2071,9 +2028,10 @@ access/contact
 
   .footer__group {
         display: flex;
-        gap: 20px;
-        justify-content: space-between;
+        /* gap: 20px; */
+        justify-content:center;
         flex-wrap: wrap;
+
   }
 
   .footer__logo {
@@ -2084,10 +2042,10 @@ access/contact
     .menu__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 30px;
         list-style: none;
         padding: 0;
-        justify-content: center;
+        justify-content:space-around;
 
     }
 
@@ -2120,6 +2078,10 @@ access/contact
     .phone__txt__f {
         font-size: 1.5rem;
         margin-left: 0;
+    }
+
+    .footer .instagram__click__f {
+        font-size: 1.8rem;
     }
 
     .footer__copy {

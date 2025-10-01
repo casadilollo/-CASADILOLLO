@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="まるでイタリアの家のような温かい雰囲気のピザレストラン。名物ブラータポモドリーニは他では味わえない絶品。ランチやディナー、テイクアウトも可能です。">
 
-    <title>CASADILLO</title>
+    <title>CASADILOLLO</title>
+    <link rel="icon"    href="assets/images-infomation/favionstyle__casadilollo_ol.ai-2.png">
+
 
     <!-- web font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,7 +75,7 @@
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon"   src="assets/images-infomation/map-icon.png" alt="住所を表すアイコン">
-                             <p class="info__title">住所</p>
+                             <span class="info__title">住所</span>
                         </h3>
                         <div class="txtseta">
                             <p class="info__text__detial">千葉県柏市今谷上町1-31 センチュリーエムズ103</p>
@@ -89,7 +91,7 @@
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon"   src="assets/images-infomation/train-icon.png" alt="行き方をお知らせするためのアイコン">
-                            <p class="info__title">アクセス</p>
+                            <span class="info__title">アクセス</span>
                         </h3>
                         <div class="txtsetb">
                         <p class="info__text__detial">JR常磐線南柏東口より徒歩5分</p>
@@ -100,7 +102,7 @@
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon"   src="assets/images-infomation/tell-icon.png" alt="電話のアイコン">
-                            <p class="info__title">電話番号</p>
+                            <span class="info__title">電話番号</span>
                         </h3>
                         <p class="info__text__detial__a">04-7107-4940</p>
                     </li>
@@ -108,7 +110,7 @@
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon__dm"   src="assets/images-infomation/message-icoon.png" alt="お問い合わせのアイコン">
-                            <p class="info__title">問い合わせ</p>
+                            <span class="info__title">問い合わせ</span>
                         </h3>
                         <p class="info__text__detial__b">インスタグラムのDMにて承っております。</p>
                     </li>
@@ -116,7 +118,7 @@
                     <li class="info__li">
                         <h3 class="list__midashi__ei">
                             <img class="info__aicon"   src="assets/images-infomation/clock-icon.png" alt="営業時間のアイコン">
-                            <p class="info__title">営業日・営業時間</p>
+                            <span class="info__title">営業日・営業時間</span>
                         </h3>
                         <div class="detial__set">
                             <div class="times">
@@ -135,15 +137,23 @@
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon__close"   src="assets/images-infomation/oyasumi-icon.png" alt="定休日のアイコン">
-                            <p class="info__title">定休日</p>
+                            <span class="info__title">定休日</span>
                         </h3>
-                        <p class="info__text__detial__c">月曜日</p>
+                        <p class="info__text__detial__c">月曜日、不定休あり</p>
+                    </li>
+                     <!-- 駐車場 -->
+                    <li class="info__li">
+                        <h3 class="list__midashi">
+                            <img class="info__aicon__close"   src="assets/images-infomation/parking.png" alt="駐車場のアイコン">
+                            <span class="info__title">専用駐車場</span>
+                        </h3>
+                        <p class="info__text__detial__d">なし<br class="spbr">※近隣のコインパーキングのご利用をお願い致します。</p>
                     </li>
                     <!-- 決済方法 -->
                     <li class="info__li">
                         <h3 class="list__midashi">
                             <img class="info__aicon__visa"   src="assets/images-infomation/visa-icon.png" alt="支払い方法のアイコン">
-                            <p class="info__title">決済方法</p>
+                            <span class="info__title">決済方法</span>
                         </h3>
                         <div class="detial__set__last">
                             <div class="kesaia">
@@ -195,7 +205,7 @@
                     <li class="info__li__bikou">
                         <h3 class="list__midashi">
                             <img class="info__aicon"   src="assets/images-infomation/info-icon.png" alt="備考のアイコン">
-                            <p class="info__title">備考</p>
+                            <span class="info__title">備考</span>
                         </h3>
                         <div class="ichiran">
                             <div class="ichiran__set">
@@ -261,18 +271,20 @@
         <!-- フッター -->
          <footer class="footer">
             <div class="footer__group">
-                <p class="footer__topic"><img class="footer__logo"  src="assets/images/casadilollo_ol.ai-2.png" alt=""></p>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html">TOP</a></li>
-                        <li class="menu__item"><a href="about.html">ABOUT</a></li>
-                        <li class="menu__item"><a href="food.html">FOOD</a></li>
-                        <li class="menu__item"><a href="drink.html">DRINK</a></li>
-                        <li class="menu__item"><a href="index.html#ownerprofile">PROFILE</a></li>
-                        <li class="menu__item"><a href="index.html#access">ACCESS</a></li>
-                        <li class="menu__item"><a href="info.html">SHOP INFO</a></li>
-                    </ul>
-                </nav>
+                <div class="top__footerbox">
+                    <p class="footer__topic"><img class="footer__logo"  src="assets/images/casadilollo_ol.ai-2.png" alt=""></p>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="index.html">TOP</a></li>
+                            <li class="menu__item"><a href="about.html">ABOUT</a></li>
+                            <li class="menu__item"><a href="food.html">FOOD</a></li>
+                            <li class="menu__item"><a href="drink.html">DRINK</a></li>
+                            <li class="menu__item"><a href="index.html#ownerprofile">PROFILE</a></li>
+                            <li class="menu__item"><a href="index.html#access">ACCESS</a></li>
+                            <li class="menu__item"><a href="info.html">SHOP INFO</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="footerflex">
                     <div class="contactaddress__last">
                         <a class="instawaku__footer"  target="_blank" href="https://www.instagram.com/casa_di.lollo/">

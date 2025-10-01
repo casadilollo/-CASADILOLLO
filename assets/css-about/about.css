@@ -189,7 +189,7 @@ header
     height: 84px;
     position: fixed;
     top: 0%;
-    left: 81%;
+    right: -13px;
 }
 
 .nav.active {
@@ -255,31 +255,29 @@ header
         font-size: 1.7rem;
         font-style: italic;
         font-weight: 600;
-        line-height: 1.75;
+        line-height: 2.5;
         letter-spacing: 0.51px;
         /* border-bottom: #ff0000 solid; */
     }
 
     .nav__item:hover {
-       border-bottom: var(--red) solid;
+         border-bottom:var(--red) solid;
     }
-
-
+    
     /* .nav__item:nth-child(even){
-        border-bottom: green solid;
-    } */
+        /* border-bottom: var(--italygreen) solid; */
+    
 
-    .nav__item:nth-child(even):hover{
-        border-bottom: green solid;
+    .nav__item:nth-child(even):hover {
+         border-bottom: green solid;
     }
-
-
 
     .contactaddress {
-      margin-left: 0;
-      margin-bottom: 0;
-      margin-top: 0;
-      padding: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        width: 186px;
     }
 
     
@@ -296,7 +294,13 @@ header
     .header__instalogo {
         width: 20px; 
         height: 20px;
-    }
+        /* margin-left: 30px;
+    } */}
+
+
+    /* .instagram__img {
+        min-width: 49px;
+    } */
 
     .instagram__click__f {
         font-size: 1.8rem;
@@ -321,6 +325,8 @@ header
         margin-left: 15px;
     }
 }
+
+
 /* ====================
 css記述　チャッピーaboutのところから
 ======================= */
@@ -504,7 +510,7 @@ css記述　チャッピーaboutのところから
   content: "";
   width: 2px;
   height: 1.5rem;
-  background-color:var(--italygreen); /* 緑色 */
+  background-color:var(--italygreen);
   transform:rotate(-25deg);
   border-radius: 5px;
   transform-origin: center bottom;
@@ -582,6 +588,8 @@ css記述　チャッピーaboutのところから
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 319px;
+  margin: 0 auto;
 }
 
 /* タイトル */
@@ -700,6 +708,7 @@ css記述　チャッピーaboutのところから
     max-width: 960px;
     gap: 70px;
     margin-top: 54px;
+    margin: 0 auto;
   }
    
   /* 各項目セット（ピザ生地 / 窯） */
@@ -734,9 +743,9 @@ css記述　チャッピーaboutのところから
     }
 
     .kama__img {
-      width: 100%;
-      max-width: 284px;
-      height: 355px;
+      /* width: 100%; */
+      width: 284px;
+      height: auto;
       object-fit: cover;
       display: block;
       margin: 0 auto;
@@ -746,6 +755,7 @@ css記述　チャッピーaboutのところから
     .about__caption {
       align-items: flex-start; /* テキストを左寄せに */
       max-width: 390px;
+      margin: 0;
     }
     
     /* タイトル */
@@ -818,11 +828,12 @@ css記述　チャッピーaboutのところから
 } */
 
 .winepeople__img {
-  width: 100%;
+  width:80%;
   /* max-width: 295px; */
   height: auto;
   display: block;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .concept__erea {
@@ -831,16 +842,26 @@ css記述　チャッピーaboutのところから
 }
 
 .concept__erea::before {
-  content: '';
+  content: 'CONCEPT';
   display: inline-block;
-  background: url(../images-about/concept.png) no-repeat center / contain;
+  /* background: url(../images-about/concept.png) no-repeat center / contain;
   width: 352px;
-  height: 61px;
+  height: 61px; */
   position: absolute;
   z-index: -100;
-  top: 32%;
-  left: 36%;
-  transform: rotate(90deg)
+  top: -10%;
+  /* left: 36%; */
+  font-size: 60px;
+  /* transform: rotate(90deg); */
+  writing-mode: vertical-lr;
+  right: -19px;
+  bottom: 0;
+  font-family: "Fira Sans";
+  font-style: italic;
+  color: #f5f3f3;
+  font-weight: 600;
+
+
 
 }
 
@@ -899,19 +920,20 @@ css記述　チャッピーaboutのところから
     flex-shrink: 0;
     flex-basis: 50%;
     /* width: 459px; */
+    max-width: 419px;
   }
 
   .concept__erea::before {
-    content: '';
+    content: 'CONSEPT';
     display: inline-block;
-    background: url(../images-about/concept.png) no-repeat center / contain;
-    width: 319px;
-    height: 56px;
-    position: absolute;
-    z-index: -100;
-    top: -13px;
-    left: 0;
-    transform: rotate(0deg);
+    top: -10%;
+    /* right: 0; */
+    font-size: 70px;
+    font-family: "Fira Sans";
+    /* transform: rotate(0deg); */
+    writing-mode: rl-tb;
+    left:-11px;
+    font-style: italic;
   }
 
   .concept__title {
@@ -1066,7 +1088,11 @@ css記述　チャッピーaboutのところから
 
     .footer__group {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .top__footerbox {
+        display: flex;
     }
 
     .footer__topic {
@@ -1086,7 +1112,7 @@ css記述　チャッピーaboutのところから
     .menu__list {
         display: flex;
         flex-direction: row;
-        gap: 63px;
+        gap: 76px;
     }
 
     .menu__item {
@@ -1108,6 +1134,7 @@ css記述　チャッピーaboutのところから
         margin-top: 0;
         margin-bottom: 30px;
         padding-right: 50px;
+        width: 292px;
     }
 
     .instawaku__footer {
@@ -1140,6 +1167,18 @@ css記述　チャッピーaboutのところから
         letter-spacing: 0.6px;
         width: auto;
     }
+
+      .contactaddress__last,
+      .copylight {
+      text-align: center;   /* 中央寄せにしたい場合 */
+    }
+
+    .contactaddress__last {
+       margin-bottom: 15px;  /* インスタ・電話とコピーライトの間に余白 */
+    }
+
+
+
 }
 
 
@@ -1149,15 +1188,9 @@ css記述　チャッピーaboutのところから
 
 
 /* ===========================
-   tablet 769px〜1297px 共通
+   中間サイズ　tablet 769px〜1297px 共通
 =========================== */
 @media screen and (min-width: 769px) and (max-width: 1297px) {
-    /* ===== header ===== */
-    .header {
-        /* height: 80px; */
-        padding: 0 32px;
-    }
-
     .header__logo {
         /* max-width: 100px; */
         height: auto;
@@ -1185,8 +1218,8 @@ css記述　チャッピーaboutのところから
     .nav__list {
         display: flex;
         /* flex-wrap: wrap;  */
-        gap: 24px;
-        margin: 0;
+        gap: 18px;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
         justify-content: center;
@@ -1198,9 +1231,13 @@ css記述　チャッピーaboutのところから
         margin-top: 0;
     }
 
+    /* .header__btn {
+        left: 90%;
+    } */
+
     .contactaddress {
         max-width: 90%;          /* 横幅を少し広めに */
-        margin: 40px auto;       /* 上下に余白・中央寄せ */
+        /* margin: 0 auto;  */
         display: flex;           /* 横並びにしたい場合 */
         flex-wrap: wrap;         /* はみ出したら折り返し */
         justify-content: center; /* 中央配置 */
@@ -1211,15 +1248,19 @@ css記述　チャッピーaboutのところから
     .instawaku__nav {
         display: flex;             /* 横並びに */
         justify-content: center;   /* 中央寄せ */
-        gap: 20px;                 /* アイテム間の間隔 */
-        margin-top: 20px;          /* 上の余白調整 */
+        gap: 20px;              
+        /* margin-top: 20px; */
         flex-wrap: wrap;           /* 幅が狭くなったら折り返す */
-  }  
+    } 
+
+    .header .instagram__img {
+        min-width: 0;
+    }
 
   .phone {
       display: flex;
       /* justify-content: center; */
-      gap: 20px;
+      /* gap: 20px; */
       flex-wrap: wrap;
   }
     
@@ -1230,27 +1271,60 @@ css記述　チャッピーaboutのところから
     .header__btn {
         display: none;
     }
-  
 
    /* ===== main ===== */
+     .aboutwaku {
+      flex-direction: column;
+    }
+
+    .kamayakipizza__img {
+      width: 459px;
+    }
+
+
+    .about__caption {
+      max-width: 319px;
+    }
+
+
+
    .conseptcontents {
       display: flex;
-      flex-direction: row-reverse; /* 画像右、テキスト左 */
+      /* flex-direction: column;  */
       gap: 40px;                   /* 画像とテキスト間の余白 */
       align-items: center;
       justify-content: center;
+  }
+
+  .concept__erea::before {
+    content: "CONSEPT";
+    display: inline-block;
+    position: absolute;
+    z-index: -100;
+    top: -4%;
+    font-size: 60px;
+    /* writing-mode: vertical-lr; */
+    right: 0;
+  }
+
+
+
+  .concept__txt {
+    max-width: 365px;
   }
 
   .free__img {
       flex: 0 0 45%;   /* 親の幅の45%を確保 */
       max-width: 600px; /* 上限を設定 */
       height: auto;
+      width: 100%;
   }
 
   .winepeople__img {
-      width: 100%;
       height: auto;
       display: block;
+      max-width: 324px;
+      width: 324px;
   }
 
   .concept__erea {
@@ -1265,17 +1339,17 @@ css記述　チャッピーaboutのところから
 
 
 
-    /* ===== footer ===== */
+ /* ===== footer ===== */
     .footer {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
         padding: 0 30px;
         flex-wrap: wrap;
-        padding: 40px 7.4vw;
-        background-color: #f9f9f9;
+        /* padding: 40px 7.4vw; */
+        background-color: var(--creamcolor);
         text-align: center;
   }
 
@@ -1283,9 +1357,10 @@ css記述　チャッピーaboutのところから
 
   .footer__group {
         display: flex;
-        gap: 20px;
-        justify-content: space-between;
+        /* gap: 20px; */
+        justify-content:center;
         flex-wrap: wrap;
+
   }
 
   .footer__logo {
@@ -1296,10 +1371,10 @@ css記述　チャッピーaboutのところから
     .menu__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 30px;
         list-style: none;
         padding: 0;
-        justify-content: center;
+        justify-content:space-around;
 
     }
 
@@ -1334,8 +1409,8 @@ css記述　チャッピーaboutのところから
         margin-left: 0;
     }
 
-    .phone {
-      flex-wrap: nowrap;
+    .footer .instagram__click__f {
+        font-size: 1.8rem;
     }
 
     .footer__copy {
@@ -1343,5 +1418,5 @@ css記述　チャッピーaboutのところから
         text-align: right;
         width: 100%;
         margin-top: 10px;
-  }
+    }
 }

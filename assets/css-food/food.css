@@ -17,8 +17,8 @@ html {
 
 body {
     font-family:
-         'Noto Sans CJK JP',
-        'Noto Sans JP',
+        'noto sans cjk jp',
+        'noto sans jp',
         'Fira Sans',
         sans-serif;
     font-style: normal;
@@ -124,13 +124,13 @@ header
 }
 
 .nav__list {
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 .contactaddress {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 0 calc((100% - 186px)/2);
+    margin-top: 30px;
+   margin-bottom: 30px;
+   padding: 0 calc((100% - 186px)/2);
 }
 
 
@@ -189,7 +189,7 @@ header
     height: 84px;
     position: fixed;
     top: 0%;
-    left: 81%;
+    right: -13px;
 }
 
 .nav.active {
@@ -210,7 +210,7 @@ header
         width: 104px;
         height: auto;
         margin-left: 17px;
-        
+
     }
 
     .nav {
@@ -255,30 +255,29 @@ header
         font-size: 1.7rem;
         font-style: italic;
         font-weight: 600;
-        line-height: 1.75;
+        line-height: 2.5;
         letter-spacing: 0.51px;
-       
+        /* border-bottom: #ff0000 solid; */
     }
 
     .nav__item:hover {
-       border-bottom: var(--red) solid;
+         border-bottom:var(--red) solid;
     }
-
-
+    
     /* .nav__item:nth-child(even){
-        border-bottom: green solid;
-    } */
+        /* border-bottom: var(--italygreen) solid; */
+    
 
-
-    .nav__item:nth-child(even):hover{
-        border-bottom: green solid;
+    .nav__item:nth-child(even):hover {
+         border-bottom: green solid;
     }
 
     .contactaddress {
-      margin-left: 0;
-      margin-bottom: 0;
-      margin-top: 0;
-      padding: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        width: 186px;
     }
 
     
@@ -295,7 +294,13 @@ header
     .header__instalogo {
         width: 20px; 
         height: 20px;
-    }
+        /* margin-left: 30px;
+    } */}
+
+
+    /* .instagram__img {
+        min-width: 49px;
+    } */
 
     .instagram__click__f {
         font-size: 1.8rem;
@@ -320,6 +325,7 @@ header
         margin-left: 15px;
     }
 }
+
 /* chatGPTによるCSS
 * ================== 
 セクション全体
@@ -781,21 +787,21 @@ header
 .price {
   font-size: 1.8rem;
   color: var(--black);
-  /* font-family: Noto Sans CJK JP; */
+  font-family: Noto Sans CJK JP;
   font-weight: 500;
   line-height: 37.80px;
 }
 
 .product__name {
  font-size: 1.4rem;
- /* font-family: Noto Sans CJK JP; */
+ font-family: Noto Sans CJK JP;
  font-weight: 350;
  line-height: 26.32px;
 }
 
 .main__taxt {
  font-size: 1.4rem;
- /* font-family: Noto Sans CJK JP; */
+ font-family: Noto Sans CJK JP;
  line-height: 26.32px;
  /* margin-top: 16px; */
  /* margin-bottom: 16px; */
@@ -863,7 +869,7 @@ li.pizza__txt__sample {
 /* PC VER */
   @media screen and (min-width:769px) {
     .menu__pizza {
-      padding: 85px 16.6vw;
+      padding: 85px 2.6vw;
       gap: 70px;
     }
 
@@ -987,8 +993,8 @@ li.pizza__txt__sample {
 
     .list__recommend li:nth-child(n+2) {
       /* width: calc(50% - 10px); 50%からgapの半分（20px/2 = 10px）を引く */
-      width: 336px;
-      flex-direction: column; /* 画像とテキストを縦並びにする */
+      /* width: 336px; */
+      flex-direction: row; /* 画像とテキストを縦並びにする */
     }
 
     .list__recommend li:first-child .menu__img {
@@ -1080,7 +1086,7 @@ li.pizza__txt__sample {
   .noimg {
     background-color: rgba(230, 227, 227, 0.3);
     display: block;
-    width: 869px;
+    max-width: 869px;
     border: 1px solid #C4C4C4;
   }
 
@@ -1197,7 +1203,7 @@ li.pizza__txt__sample {
 .caption__title__jp {
   font-size: 2rem;
   font-weight: 500;
-  /* font-family: Noto Sans CJK JP; */
+  font-family: Noto Sans CJK JP;
   line-height: 42px;
 }
 
@@ -1401,7 +1407,7 @@ li.pizza__txt__sample {
 
 .mini__title__jp {
     font-size: 1.6rem;
-    /* font-family: Noto Sans CJK JP; */
+    font-family: Noto Sans CJK JP;
     font-weight: 500;
     line-height: 29.76px;
     letter-spacing: 0.32px;
@@ -1469,9 +1475,9 @@ li.pizza__txt__sample {
 
     /* クロスティーニと前菜の箱 */
     .others__list li:nth-child(n+2) {
-      width: 336px;
+      /* width: 336px; */
       align-items: center;
-      gap: 30px;
+      /* gap: 30px; */
     }
 
     /* クロスティーニと写真の大きさ */
@@ -1491,6 +1497,7 @@ li.pizza__txt__sample {
     .lap .noimg__dc__ot {
       max-width: 869px;
       align-items: start;
+      margin: 0 auto;
 
     }
     .ppp {
@@ -1517,7 +1524,7 @@ li.pizza__txt__sample {
     }
 
     .lap .litle__caption__dc__ot {
-     gap: 70px;
+     gap: 65px;
     }
 
   }
@@ -1616,7 +1623,7 @@ li.pizza__txt__sample {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px;
-     padding: 0 calc((100% - 186px)/2);
+    padding: 0 calc((100% - 186px)/2);
 }
 
 .instawaku__footer {
@@ -1684,7 +1691,7 @@ li.pizza__txt__sample {
     font-style: italic;
     font-weight: 600;
     line-height: 2.1;
-   white-space: nowrap;
+     white-space: nowrap;
 }
 
 .copy {
@@ -1700,6 +1707,7 @@ li.pizza__txt__sample {
 
 
 
+
 @media screen and (min-width:769px) {
     .footer {
         padding: 0;
@@ -1707,7 +1715,12 @@ li.pizza__txt__sample {
 
     .footer__group {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+
+    .top__footerbox {
+        display: flex;
     }
 
     .footer__topic {
@@ -1727,7 +1740,7 @@ li.pizza__txt__sample {
     .menu__list {
         display: flex;
         flex-direction: row;
-        gap: 63px;
+        gap: 76px;
     }
 
     .menu__item {
@@ -1749,6 +1762,7 @@ li.pizza__txt__sample {
         margin-top: 0;
         margin-bottom: 30px;
         padding-right: 50px;
+        width: 292px;
     }
 
     .instawaku__footer {
@@ -1781,12 +1795,17 @@ li.pizza__txt__sample {
         letter-spacing: 0.6px;
         width: auto;
     }
+
+     .contactaddress__last,
+      .copylight {
+      text-align: center;   /* 中央寄せにしたい場合 */
+    }
+
+    .contactaddress__last {
+       margin-bottom: 15px;  /* インスタ・電話とコピーライトの間に余白 */
+    }
+
 }
-
-
-
-
-
 
 
 
@@ -1794,13 +1813,7 @@ li.pizza__txt__sample {
    tablet 769px〜1297px 共通
 =========================== */
 @media screen and (min-width: 769px) and (max-width: 1297px) {
-    /* ===== header ===== */
-    .header {
-        /* height: 80px; */
-        padding: 0 32px;
-    }
-
-    .header__logo {
+   .header__logo {
         /* max-width: 100px; */
         height: auto;
     }
@@ -1827,8 +1840,8 @@ li.pizza__txt__sample {
     .nav__list {
         display: flex;
         /* flex-wrap: wrap;  */
-        gap: 24px;
-        margin: 0;
+        gap: 18px;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
         justify-content: center;
@@ -1840,9 +1853,13 @@ li.pizza__txt__sample {
         margin-top: 0;
     }
 
+    /* .header__btn {
+        left: 90%;
+    } */
+
     .contactaddress {
         max-width: 90%;          /* 横幅を少し広めに */
-        margin: 40px auto;       /* 上下に余白・中央寄せ */
+        /* margin: 0 auto;  */
         display: flex;           /* 横並びにしたい場合 */
         flex-wrap: wrap;         /* はみ出したら折り返し */
         justify-content: center; /* 中央配置 */
@@ -1853,15 +1870,19 @@ li.pizza__txt__sample {
     .instawaku__nav {
         display: flex;             /* 横並びに */
         justify-content: center;   /* 中央寄せ */
-        gap: 20px;                 /* アイテム間の間隔 */
-        margin-top: 20px;          /* 上の余白調整 */
+        gap: 20px;              
+        /* margin-top: 20px; */
         flex-wrap: wrap;           /* 幅が狭くなったら折り返す */
-  }  
+    } 
+
+    .header .instagram__img {
+        min-width: 0;
+    }
 
   .phone {
       display: flex;
       /* justify-content: center; */
-      gap: 20px;
+      /* gap: 20px; */
       flex-wrap: wrap;
   }
     
@@ -1874,27 +1895,107 @@ li.pizza__txt__sample {
     }
 
 
+  /* ===== main__pizza===== */
+  .pizza__corner {
+    margin: 0 auto;
+  }
+
+  .food__sample__down {
+    gap:54px ;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list__tomato{
+    gap: 54px;
+  }
+
+
+  .list__cheese {
+    gap: 54px;
+  }
+
+
+/* ===== main__dolce===== */
+
+  .noimg__dc__ot {
+    display: flex;          
+    flex-wrap: wrap;        
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto; 
+    padding: 30px 2.9vw;
+  }
+
+  .lap .noimg__dc__ot {
+    max-width: 745px;
+  }
+
+
+  /* 各商品リスト */
+  .noimg__dc__ot li {
+    text-align: left;        /* 左寄せでも中央でも */
+    margin-bottom: 15px;     /* 下余白 */
+  }
+
+  /* 商品名と価格 */
+  .noimg__dc__ot li .mini__title__jp {
+    font-size: 1.6rem;       /* フォントサイズ調整 */
+  }
+  .noimg__dc__ot li .price {
+    font-size: 1.4rem;
+  }
+
+
+  /* ===== main__others===== */
+
+    .menu__others {
+    padding: 2.6vw;
+  }  
+
+
+
+  .ppp {
+    max-width:745px;
+    gap: 54px;
+  }
+
+  .uuu {
+    gap: 45px;
+  }
+
+
+  
+
+
+
+
+
 
      
-    /* ===== footer ===== */
+ /* ===== footer ===== */
     .footer {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
         padding: 0 30px;
         flex-wrap: wrap;
-        padding: 40px 7.4vw;
-        background-color: #f9f9f9;
+        /* padding: 40px 7.4vw; */
+        background-color: var(--creamcolor);
         text-align: center;
   }
 
+
+
   .footer__group {
         display: flex;
-        gap: 20px;
-        justify-content: space-between;
+        /* gap: 20px; */
+        justify-content:center;
         flex-wrap: wrap;
+
   }
 
   .footer__logo {
@@ -1905,10 +2006,10 @@ li.pizza__txt__sample {
     .menu__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 30px;
         list-style: none;
         padding: 0;
-        justify-content: center;
+        justify-content:space-around;
 
     }
 
@@ -1943,11 +2044,9 @@ li.pizza__txt__sample {
         margin-left: 0;
     }
 
-
-    .phone {
-      flex-wrap: nowrap;
+    .footer .instagram__click__f {
+        font-size: 1.8rem;
     }
-
 
     .footer__copy {
         font-size: 1.4rem;
@@ -1969,6 +2068,4 @@ li.pizza__txt__sample {
 
 
 
-
    
-
