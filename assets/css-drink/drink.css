@@ -252,10 +252,11 @@ header
 
     .nav__item {
         text-align: center;
+        font-family: "Fira Sans";
         font-size: 1.7rem;
         font-style: italic;
         font-weight: 600;
-        line-height: 2.5;
+        line-height: 2.1;
         letter-spacing: 0.51px;
         /* border-bottom: #ff0000 solid; */
     }
