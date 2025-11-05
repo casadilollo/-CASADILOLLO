@@ -522,6 +522,12 @@ css記述　ジェンみさん
     gap: 25px; /* 要素間のスペース */
 }
 
+.cash {
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
 .set__title {
     font-size: 1.4rem;
     color: var(--black);
@@ -537,7 +543,7 @@ css記述　ジェンみさん
 }
 
 /* 決済方法 */
-.kesaia, .kesaib{
+.kesaia, .kesaib, .kesaicash{
     display: flex;
     /* margin-bottom: 15px; */
      position: relative;
@@ -555,6 +561,21 @@ css記述　ジェンみさん
     height: 2px;
     background-image: url(../images-infomation/line2.png);
 }
+
+.kesaicash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 121%;
+    left: -2px;
+    width: 100%;
+    height: 2px;
+    background-image: url(../images-infomation/line2.png);
+}
+
+
+
+
 
 .kesaic {
     display: flex;
@@ -842,6 +863,12 @@ main
     }
 
 
+    .cash {
+        font-size: 1.7rem;
+        line-height: 29.41px;
+        font-weight: 500;
+    }
+
     .set__title {
         font-size: 1.7rem;
         line-height: 29.41px;
@@ -866,7 +893,8 @@ main
     }
 
     .kesaia,
-    .kesaib {
+    .kesaib,
+    .kesaicash {
         width: 731px;
     }
 
@@ -1280,7 +1308,7 @@ main
     padding: 40px 10vw;
   }
 
-  .kesaia::after, .kesaib::after {
+  .kesaia::after, .kesaib::after, .kesaicash::after {
     width: 73%;
   }
 

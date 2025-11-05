@@ -849,7 +849,7 @@ header
 .list__beer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .photoset {
@@ -869,6 +869,7 @@ header
   flex-direction: column;
   align-items: center;
   text-align: left;
+  gap: 30px;
 }
 
 
@@ -912,6 +913,10 @@ header
   line-height: 37.80px;
 }
 
+.litle__captionc .price {
+  font-size: 1.8rem;
+}
+
 .product__name {
   font-size: 1.4rem;
   /* font-family: Noto Sans CJK JP; */
@@ -944,6 +949,7 @@ header
 
 .nono .drink__sample {
   display: flex;
+   /* padding: 30px 3.9vw; */
   
 }
 
@@ -955,6 +961,7 @@ header
   border-bottom: 1px solid rgba(51, 51, 51, 0.60);
   padding-bottom: 16px;
   width: 326px;
+   /* padding: 30px 3.9vw; */
 
 }
 
@@ -1102,7 +1109,7 @@ header
     .list__beer li:first-child  {
       width: 336px;
       align-items: center; 
-      gap: 30px; 
+      gap: 70px; 
     }
 
     /* 1 段目の写真の大きさ */
@@ -1113,7 +1120,7 @@ header
     }
 
     .list__beer li:nth-child(n+2) {
-      width: 336px;
+      /* width: 336px; */
       flex-direction: column; 
     }
 
@@ -1127,7 +1134,7 @@ header
     .morepero {
       display: flex;
       flex-direction: row;
-      gap: 121px;
+      gap: 170px;
     }
 
     .caption {
@@ -1155,7 +1162,7 @@ header
     }
 
     .nono {
-      padding: 15px 1.4vw;
+      padding: 30px 3.9vw;
       background-color: rgba(230, 227, 227, 0.3);
       border: 1px solid #C4C4C4;
     }
@@ -1175,6 +1182,11 @@ header
     .litle__caption  {
       gap: 195px;
     }
+
+    /* .litle__caption__a {
+      padding: 30px 3.9vw;
+
+    } */
 
   }
 
@@ -1229,7 +1241,11 @@ header
   gap: 4px;
   /* margin-bottom: 24px; 各商品間の余白 */
   border-bottom: 1px solid rgba(51, 51, 51, 0.60);
-  
+}
+
+
+.boxc .alcohol__txt__sample {
+   width: 360px;
 }
 
 /* 名前と価格（横並び） */
@@ -1261,7 +1277,6 @@ header
   font-weight: 500;
   color: #333;
   padding-bottom: 16px;
-
 }
 
 .mini__title {
@@ -1270,6 +1285,10 @@ header
   color:var(--black);
   line-height: 29.76px;
   letter-spacing: 0.32px;
+}
+
+.boxc .litle__captionc .second__minititle {
+  font-size: 1.4rem;
 }
 
 
@@ -1295,6 +1314,10 @@ header
   display: flex;
   gap: 38px;
   align-items: center;
+}
+
+.boxc .litle__captionc .bottle__price {
+  gap: 0;
 }
 
 /* ワイン名（ボトル）行を2段にした場合の微調整 */
@@ -1334,6 +1357,11 @@ header
   .alcohol__txt__sample {
     border-bottom: 1px solid var(--black);
     width: 246px;
+  }
+
+  .boxc .alcohol__txt__sample {
+    border-bottom: 1px solid var(--black);
+    width: 650px;
   }
 
   .boxa {
@@ -1379,6 +1407,10 @@ header
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 37.80px;
+  }
+
+  .boxc .litle__captionc .second__minititle {
+    font-size: 1.6rem;
   }
 
   .bottles {
@@ -1649,7 +1681,7 @@ header
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
@@ -1726,8 +1758,8 @@ header
   }
 
   .box__american .litle__caption__dc__ot {
-    justify-content: flex-start;
-    gap: 60px;
+    /* justify-content: flex-start; */
+    gap: 30px;
     border-bottom: 1px solid rgba(51, 51, 51, 0.60);
     width: 343px;
   }
@@ -1809,6 +1841,12 @@ header
   gap: 15px;
 }
 
+.box__american {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 
 /* ==================  */
 /* コーヒーと紅茶*/
@@ -1872,8 +1910,10 @@ header
   }
 
   .box__american {
+    display: flex;
     padding:0 3.9vw 30px;
-    
+    flex-direction: row;
+    gap: 94px;
   }
 
 
@@ -2277,20 +2317,20 @@ header
   }
 
 
-   .alcohol__txt__sample {
-    width: 319px;
+   .boxc .alcohol__txt__sample {
+    width: 608px;
   }
 
   .flex {
     justify-content: center;
   }
 
-  .litle__captionc {
+  /* .litle__captionc {
     width: 246px;
-  }
+  } */
 
   .morepero {
-    gap: 60px;
+    gap: 54px;
   }
 
    /* ===== main__softdrink ===== */
